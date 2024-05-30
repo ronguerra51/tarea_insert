@@ -11,7 +11,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-file-person me-2"></i>CLIENTES
+          <i class="bi bi-pencil-square"></i></i>EDITAR
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="../clientes/index.php"><i class="bi bi-plus-circle me-2"></i>CREAR</a></li>
