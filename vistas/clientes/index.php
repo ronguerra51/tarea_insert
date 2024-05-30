@@ -30,13 +30,13 @@ include_once '../../vistas/templates/header.php'; ?>
             </div>
         </div>
         <div class="row mb-3">
-            <div class="col">
-                <button type="submit" class="btn btn-secondary w-100">GUARDAR</button>
+            <div class="col text-center">
+                <button type="submit" class="btn btn-primary">GUARDAR</button>
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <a href="../../controladores/clientes/buscar.php" class="btn btn-secondary w-100">BUSCAR</a>
+            <div class="col text-center">
+                <a href="../../controladores/clientes/buscar.php" class="btn bg-info">BUSCAR</a>
             </div>
         </div>
     </form>
