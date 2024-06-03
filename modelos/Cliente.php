@@ -55,4 +55,26 @@ class Cliente extends Conexion{
         $resultado = self::servir($sql);
         return $resultado;
     }
+
+    public function buscarId($id){
+        $sql = " SELECT * FROM clientes WHERE cli_situacion = 1 AND cli_id = '$id' ";
+        $resultado = array_shift( self::servir($sql)) ;
+
+        return $resultado;
+    }
+
+    public function modificar(){
+        $sql = "UPDATE clientes SET cli_nombre = '$this->cli_nombre', cli_apellido = '$this->cli_apellido', cli_nit = '$this->cli_nit', cli_telefono = '$this->cli_telefono' WHERE cli_id = $this->cli_id ";
+        $resultado = $this->ejecutar($sql);
+        return $resultado; 
+    }
+
+    public function eliminar(){
+        // $sql = "DELETE FROM clientes WHERE cli_id = $this->cli_id ";
+
+        // echo $sql;
+        $sql = "UPDATE clientes SET cli_situacion = 0 WHERE cli_id = $this->cli_id ";
+        $resultado = $this->ejecutar($sql);
+        return $resultado; 
+    }
 }
